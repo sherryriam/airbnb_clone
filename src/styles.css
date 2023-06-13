@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    height: 70px;
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+
+}
+nav > .nav-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    nav > .nav--logo {
+      animation: App-logo-spin 2s linear;
+    }
+}
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+section {
+  padding: 20px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero--photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
+
+.hero--header {
+  margin-bottom: 16px;
+}
+
+
+.hero--text {
+  margin-top: 0;
+}
+.cards-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+}
+.card {
+  position: relative;
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+.card:hover {
+  border: 0.01px solid grey;
+  border-radius: 5%;
+  font-size: 15px;
+  font-weight: bold;
+  width: 190px;
+  cursor: pointer;
+}
+.card--star {
+  width: 14px;
+}
+.card--image {
+  max-width:  175px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.card--image:hover {
+  max-width:  188px;
+}
+.card--badge {
+  position: absolute;
+  background-color: red;
+  font-weight: bold;
+  top: 1%;
+  left: 2%;
+  padding: 3px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: white;
+}
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card--price {
+  margin-top: auto;
+}
